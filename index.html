@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume and Job Posting Comparison</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Resume Comparison App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Compare Your Resume with Job Posting</h1>
-        <form action="/compare" method="post" enctype="multipart/form-data">
-            <label for="resume">Your Resume (Paste or Upload):</label>
-            <textarea id="resume" name="resume" rows="10" placeholder="Paste your resume here..."></textarea>
-            <input type="file" id="resume_file" name="resume_file" accept=".txt,.pdf,.docx">
-            <label for="job_posting">Job Posting (Paste or Upload):</label>
-            <textarea id="job_posting" name="job_posting" rows="10" placeholder="Paste the job description here..."></textarea>
-            <input type="file" id="job_posting_file" name="job_posting_file" accept=".txt,.pdf,.docx">
-            <input type="submit" value="Compare">
-        </form>
-    </div>
+    <header>
+        <h1>Resume Comparison App</h1>
+        <p>Welcome to the Resume Comparison App! This tool allows you to compare your resume with a job description to find overlap and get insights.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Upload or paste your resume and job description</li>
+                <li>View the similarity score between resume and job posting</li>
+                <li>See common terms between the resume and job posting</li>
+                <li>Get a category classification for the resume</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Live Demo</h2>
+            <p>You can access the live version of the Resume Comparison App here:</p>
+            <a href="https://your-app.herokuapp.com" target="_blank">Live App</a>
+        </section>
+        <section>
+            <h2>How to Run Locally</h2>
+            <p>To run the app locally, follow these steps:</p>
+            <ul>
+                <li>Clone the repository:</li>
+                <pre><code>git clone https://github.com/your-username/resume-comparison-app.git</code></pre>
+                <li>Navigate to the project directory:</li>
+                <pre><code>cd resume-comparison-app</code></pre>
+                <li>Install the required packages:</li>
+                <pre><code>pip install -r requirements.txt</code></pre>
+                <li>Run the Flask application:</li>
+                <pre><code>python app.py</code></pre>
+                <li>Visit <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a> in your web browser.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>If you have any questions or feedback, feel free to reach out to me:</p>
+            <ul>
+                <li>Email: <a href="mailto:611noorsaeed@gmail.com">611noorsaeed@gmail.com</a></li>
+                <li>Phone: 03442826192</li>
+                <li>GitHub: <a href="https://github.com/611noorsaeed" target="_blank">github.com/611noorsaeed</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/noor-saeed654a23263/" target="_blank">LinkedIn Profile</a></li>
+                <li>Blogs: <a href="https://medium.com/@611noorsaeed" target="_blank">Medium Blog</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Noor Saeed. All rights reserved.</p>
+    </footer>
 </body>
 </html>
