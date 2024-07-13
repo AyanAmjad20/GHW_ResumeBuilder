@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume and Job Posting Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Compare Your Resume with Job Posting</h1>
+        <form action="/compare" method="post" enctype="multipart/form-data">
+            <label for="resume">Your Resume (Paste or Upload):</label>
+            <textarea id="resume" name="resume" rows="10" placeholder="Paste your resume here..."></textarea>
+            <input type="file" id="resume_file" name="resume_file" accept=".txt,.pdf,.docx">
+            <label for="job_posting">Job Posting (Paste or Upload):</label>
+            <textarea id="job_posting" name="job_posting" rows="10" placeholder="Paste the job description here..."></textarea>
+            <input type="file" id="job_posting_file" name="job_posting_file" accept=".txt,.pdf,.docx">
+            <input type="submit" value="Compare">
+        </form>
+    </div>
+</body>
+</html>
