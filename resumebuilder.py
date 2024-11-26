@@ -60,6 +60,3 @@ print('Accuracy:', accuracy_score(y_test, y_pred))
 with open('model_pipeline.pkl', 'wb') as file:
     pickle.dump(pipeline, file)
 
-# Optionally, load the pipeline (if you need to reuse it later)
-# with open('model_pipeline.pkl', 'rb') as file:
-#     pipeline = pickle.load(file)
